@@ -1,1 +1,1 @@
-# Jsp_pratice
+# Jsp 쇼핑몰
