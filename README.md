@@ -109,7 +109,7 @@ join.jsp 파일에서 form 태그를 이용하여 데이터를 request 라는 �
 
 custno는 숫자 데이터이기 때문에 Integer.parseInt()이라는 메소드를 이용하여 형 변환을 해준다.
 
-## 회원목록/수정
+# 회원목록/수정
 ![image](https://github.com/seokhyun06/Shoppingmall/assets/122009563/d4563259-8440-4f56-8a95-b9e80fad0fc9)
 
 ```java
@@ -132,4 +132,6 @@ custno는 숫자 데이터이기 때문에 Integer.parseInt()이라는 메소드
 오라클에서 문자열을 날짜형 데이터로 형 변환을 하기 위해서는 TO_DATE 함수를 사용하여 joindate를 날짜형 데이터로 형 변환 시켜 준다.
 
 
-##
+# 회원정보조회
+
+# 회원매출조회
