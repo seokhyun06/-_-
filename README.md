@@ -133,5 +133,10 @@ custno는 숫자 데이터이기 때문에 Integer.parseInt()이라는 메소드
 
 
 # 회원정보조회
+![image](https://github.com/seokhyun06/Shoppingmall/assets/122009563/f7466c53-35f5-4f70-96ee-15fb03a6b3cd)
+
+![image](https://github.com/seokhyun06/Shoppingmall/assets/122009563/d438b957-75e6-459e-94d9-48038d980dea)
+
+사용자가 입력한 회원정보가 존재하지 않는다면 해당 페이지로 이동한다.
 
 # 회원매출조회
