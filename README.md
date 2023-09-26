@@ -139,4 +139,46 @@ custno는 숫자 데이터이기 때문에 Integer.parseInt()이라는 메소드
 
 사용자가 입력한 회원정보가 존재하지 않는다면 해당 페이지로 이동한다.
 
+다시조회 버튼을 누르면 전 페이지로 이동한다.
+![image](https://github.com/seokhyun06/Shoppingmall/assets/122009563/61067e2c-380a-4ab8-917e-d405a74250f9)
+
+```java
+<% if(rs.next()) { %>
+<table class = "table_style">
+	<tr>
+		<th>회원번호</th>
+		<th>회원성명</th>
+		<th>전화번호</th>
+		<th>주소</th>
+		<th>가입일자</th>
+		<th>고객등급</th>
+		<th>거주지역</th>
+	</tr>
+	<tr>
+		<td><%= rs.getString("custno") %></td>		
+		<td><%= rs.getString("custname") %></td>		
+		<td><%= rs.getString("phone") %></td>		
+		<td><%= rs.getString("address") %></td>		
+		<td><%= rs.getString("joindate") %></td>		
+		<td><%= rs.getString("grade") %></td>		
+		<td><%= rs.getString("city") %></td>		
+
+	</tr>
+	<tr>
+		<th colspan="7" align="center">
+		<input type = "button" onclick = "location.href = 'index.jsp'" value = 홈으로></th>
+	</tr>
+</table>
+	<% } else { %>
+		<p align = "center">회원번호 <%= custno1 %>의 회원 정보가 없습니다.</p><br>
+		<p align = "center"><input type = "button" onclick = "location.href = 'member_search.jsp'" value = 다시조회></p>
+		<% } %>
+```
+
+데이터베이스에서 회원 정보를 검색하고, 검색 결과에 따라 웹 페이지에 다른 내용을 표시하는 기본적인 웹 애플리케이션의 일부분이다.
+
+
+rs.next() 함수를 통해 다음 레코드(행)가 존재하는지 확인하는 조건문이다. 즉 데이터가 존재하면 
 # 회원매출조회
+
+
