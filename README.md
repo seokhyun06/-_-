@@ -44,30 +44,30 @@ Servers에서 마우스 우클릭 New Server 클릭 => Apache 폴더를 더블�
 	function checkValue(){
 		if(!document.data.custno.value){ // 'custname' 이라는 name에 value가 없을 경우
 			alert("회원성명을 확인해주세요");
-			data.custno.foucs();
+			data.custno.focus();
 			return false
 		} else if(!document.data.custname.value){
 			alert("회원이름을 확인해주세요");
-			data.custname.foucs();
+			data.custname.focus();
 			return false
 		} else if(!document.data.phone.value){
 			alert("전화번호를 확인해주세요");
-			data.phone.foucs();
+			data.phone.focus();
 			return false
 		} else if(!document.data.address.value){
 			alert("주소를 확인해주세요");
-			data.address.foucs();
+			data.address.focus();
 		} else if(!document.data.joindate.value){
 			alert("가입일자를 확인해주세요");
-			data.joindate.foucs();
+			data.joindate.focus();
 			return false
 		} else if(!document.data.grade.value){
 			alert("고객등급을 확인해주세요");
-			data.grade.foucs();
+			data.grade.focus();
 			return false
 		} else if(!document.data.city.value){
 			alert("도시코드를 확인해주세요");
-			data.city.foucs();
+			data.city.focus();
 			return false
 		}
 			alert("회원등록이 완료되었습니다.")
