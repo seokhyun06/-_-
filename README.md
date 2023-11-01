@@ -13,7 +13,7 @@ Servers에서 마우스 우클릭 New Server 클릭 => Apache 폴더를 더블�
 
 ### Oracle 연결
 
-### DB연결 
+# DBConnect
 ```
 package DB;
 
