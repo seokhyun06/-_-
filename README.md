@@ -14,6 +14,32 @@ Servers에서 마우스 우클릭 New Server 클릭 => Apache 폴더를 더블�
 ### Oracle 연결
 
 ### DB연결 
+```
+package DB;
+
+import java.sql.*;
+
+public class DBConnect{
+	public static Connection getConnection(){
+		Connection conn = null; // Connection(연결객체) 변수 conn 선언
+
+		String url = "jdbc:oracle:thin:@localhost:1521:xe"; // 연결 드라이버 주소
+		String id = "system"; // 계정 아이디
+		String pw = "1234"; // 계정 비번
+
+		try{
+			Class.forName("oracle.jdbc.OracleDriver"); 
+			conn = DriverManager.getConnection(url, id, pw);
+			System.out.println("DB 연결 성공");
+			
+		} catch(Exception e){
+			e.printStackTrace();
+			System.out.println("DB 연결 실패");
+		}
+		return conn;
+	}
+}
+```
 
 # 회원등록
 ![image](https://github.com/seokhyun06/Shoppingmall/assets/122009563/020f38ac-117a-4614-8c30-d4e26344d6b4)
