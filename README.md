@@ -72,29 +72,36 @@ public class DBConnect{
 			alert("회원성명을 확인해주세요");
 			data.custno.focus();
 			return false
+
 		} else if(!document.data.custname.value){
 			alert("회원이름을 확인해주세요");
 			data.custname.focus();
 			return false
+
 		} else if(!document.data.phone.value){
 			alert("전화번호를 확인해주세요");
 			data.phone.focus();
 			return false
+
 		} else if(!document.data.address.value){
 			alert("주소를 확인해주세요");
 			data.address.focus();
+
 		} else if(!document.data.joindate.value){
 			alert("가입일자를 확인해주세요");
 			data.joindate.focus();
 			return false
+
 		} else if(!document.data.grade.value){
 			alert("고객등급을 확인해주세요");
 			data.grade.focus();
 			return false
+
 		} else if(!document.data.city.value){
 			alert("도시코드를 확인해주세요");
 			data.city.focus();
 			return false
+
 		}
 			alert("회원등록이 완료되었습니다.")
 			return true; // 모든 입력 사항이 입력 되었을 때 'true' 반환
